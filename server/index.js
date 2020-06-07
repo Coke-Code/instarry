@@ -1,12 +1,19 @@
+// 引入接口路由
+
 const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const app = express()
-
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
-config.dev = process.env.NODE_ENV !== 'production'
 
+// Require API routes
+const users = require('./routes/users')
+
+// Import API Routes
+app.use(users)
+config.dev = process.env.NODE_ENV !== 'production'
+// app.use(api)
 async function start () {
   // Init Nuxt.js
   const nuxt = new Nuxt(config)
