@@ -18,7 +18,8 @@
     "element-ui": "^2.4.11",
     "express": "^4.16.4",
     "mysql2": "^2.1.0",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "sequelize": "^5.22.3"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
@@ -30,7 +31,6 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "jest": "^24.1.0",
     "nodemon": "^1.18.9",
-    "sequelize": "^5.22.3",
     "vue-jest": "^4.0.0-0"
   }
 }
